@@ -19,9 +19,9 @@
 
 ### Engineering 
 
-* Build upon the take home problem: how would you deploy it? Scale it? 
+* DevOps (Michael + 1 other eng) - Build upon the take home problem: how would you deploy it? Scale it? Maintain it?
 
-* Discussion about previous roles, how they worked in a team 
+* Backend (2 BE devs) - High level discussion of what it would take to implement a logging system. Given a simple app that logs a message everytime it completes an action (such as e.g. updating user info), what would an ideal system look like for logging these messages, storing them, searching them, and connecting them to incidents and traces? There should be a fair amount of whiteboarding and diagramming but this is *not* a coding exercise nor should they be expected to write lots of code
 
 ### HR / Biz
 
