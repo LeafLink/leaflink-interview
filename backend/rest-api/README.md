@@ -53,7 +53,7 @@ Given the above information, your task is to build and deliver a library to cons
 
 ## Deliverables
 
-- [ ] A link to a Git repository containing your work.
+- [ ] A runnable library addressing the above requirements
 - [ ] A README file which details how to run the library
 
 ## Considerations
