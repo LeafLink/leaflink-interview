@@ -58,10 +58,4 @@ Given the above information, your task is to build and deliver a library to cons
 
 ## Considerations
 
-Beyond just the "happy path" of calling a functioning API and parsing a successful and well-formed response, your solution should also consider the following exigencies:
-
-- Network Errors
-- Timeouts and retries
-- Error responses
-- Malformed responses (unparseable JSON or an unexpected data structure)
-
+Beyond just the "happy path" of calling a functioning API and parsing a successful and well-formed response, your solution should also consider various failure scenarios and handle them gracefully.
