@@ -11,7 +11,7 @@ Your task is to build and deliver an API with the following requirements:
 - [ ] A runnable Python project with the following specifications:
   - [ ] Listen to HTTP requests.
   - [ ] Has a single endpoint `/aggregated-data/`.
-  - [ ] Requests https://chaos.leaflink.com/ for data.
+  - [ ] Requests https://dev-interview-countries.leaflink.com/ for data.
   - [ ] Outputs aggregated 3rd party data.
 - [ ] Reasonable test coverage
 
