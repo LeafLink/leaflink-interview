@@ -9,7 +9,7 @@ Your task is to build and deliver a Python API with the following requirements:
 
 - [ ] Listen to HTTP requests.
 - [ ] Has a single endpoint `/aggregated-data/`.
-- [ ] Requests https://dev-interview-countries.leaflink.com/ for data.
+- [ ] Requests `https://dev-interview-countries.leaflink.com/` for data.
 - [ ] Outputs aggregated 3rd party data.
 - [ ] Has reasonable test coverage
 
@@ -27,18 +27,15 @@ aggregations, all of them by Region or Subregion:
   - [ ] Languages per Country
   - [ ] Latitude, Longitude
   - [ ] Population
-  - [ ] Timezone
 - [ ] Count
   - [ ] Borders
   - [ ] Countries
   - [ ] Currencies
   - [ ] Languages
-  - [ ] Timezones
 - [ ] Max
   - [ ] Area
   - [ ] Gini
   - [ ] Population
-  - [ ] Timezone
 - [ ] Min
   - [ ] Area
   - [ ] Borders per Country
@@ -46,7 +43,6 @@ aggregations, all of them by Region or Subregion:
   - [ ] Gini
   - [ ] Languages per Country
   - [ ] Population
-  - [ ] Timezone
 - [ ] Sum
   - [ ] Area
   - [ ] Gini
@@ -130,6 +126,9 @@ aggregations, all of them by Region or Subregion:
 
 ## Considerations
 
-Beyond just the "happy path" of calling a functioning API and parsing a
-successful and well-formed response, your solution should also consider
-various failure scenarios and handle them gracefully.
+The endpoint `https://dev-interview-countries.leaflink.com/` is
+designed to be unstable, you can expect the response to be delayed
+or with other status besides 200 OK; therefore beyond just the
+"happy path" of calling a functioning API and parsing a successful
+and well-formed response, your solution should also consider various
+failure scenarios and handle them gracefully.
