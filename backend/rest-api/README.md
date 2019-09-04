@@ -5,15 +5,13 @@ and handle the response from these services.
 
 ## Project
 
-Your task is to build and deliver an API with the following requirements:
+Your task is to build and deliver a Python API with the following requirements:
 
-- [ ] A new git repo with your project's code base.
-- [ ] A runnable Python project with the following specifications:
-  - [ ] Listen to HTTP requests.
-  - [ ] Has a single endpoint `/aggregated-data/`.
-  - [ ] Requests https://dev-interview-countries.leaflink.com/ for data.
-  - [ ] Outputs aggregated 3rd party data.
-- [ ] Reasonable test coverage
+- [ ] Listen to HTTP requests.
+- [ ] Has a single endpoint `/aggregated-data/`.
+- [ ] Requests https://dev-interview-countries.leaflink.com/ for data.
+- [ ] Outputs aggregated 3rd party data.
+- [ ] Has reasonable test coverage
 
 
 ### Agreggations
@@ -82,7 +80,7 @@ aggregations, all of them by Region or Subregion:
   "Australia and New Zealand": 1.2,
   "Caribbean": 1.29,
   "Central America": 1.12,
-  "Central Asia": 2.0
+  "Central Asia": 2.0,
   "Eastern Africa": 1.8,
   "Eastern Asia": 1.25,
   "Eastern Europe": 1.27,
@@ -101,7 +99,7 @@ aggregations, all of them by Region or Subregion:
   "Western Africa": 1.12,
   "Western Asia": 1.24,
   "Western Europe": 1.67,
-  "null": 2.0,
+  "null": 2.0
 }
 
 ```
@@ -126,8 +124,9 @@ aggregations, all of them by Region or Subregion:
 
 ## Deliverables
 
-- [ ] A runnable library addressing the above requirements
-- [ ] A README file which details how to run the library
+- [ ] A new git repo with your project's code.
+- [ ] A README file which details how to execute the API.
+
 
 ## Considerations
 
