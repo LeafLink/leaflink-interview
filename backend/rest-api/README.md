@@ -5,55 +5,68 @@ and handle the response from these services.
 
 ## Project
 
-Your task is to build and deliver a Python API with the following requirements:
+Your task is to build and deliver a command line tool with the following requirements:
 
-- [ ] Listen to HTTP requests.
-- [ ] Has a single endpoint `/aggregated-data/`.
+- [ ] An executable Python file that accepts the required arguments `aggregation`, `field` and `by`, with the range of acceptable values for each described below.
 - [ ] Requests `https://dev-interview-countries.leaflink.com/` for data.
-- [ ] Outputs aggregated 3rd party data.
+- [ ] Outputs aggregated 3rd party data to the console
 - [ ] Has reasonable test coverage
 
+### Aggregations
 
-### Agreggations
+The command line tool should have three required arguments, `aggregation`, `field` and `by`.
 
-Based on the request GET parameters the endpoint should handle the following
-aggregations, all of them by Region or Subregion:
+`by` values:
+  - region
+  - subregion
 
-- [ ] Average
-  - [ ] Area
-  - [ ] Borders per Country
-  - [ ] Currencies per Country
-  - [ ] Gini
-  - [ ] Languages per Country
-  - [ ] Latitude, Longitude
-  - [ ] Population
-- [ ] Count
-  - [ ] Borders
-  - [ ] Countries
-  - [ ] Currencies
-  - [ ] Languages
-- [ ] Max
-  - [ ] Area
-  - [ ] Gini
-  - [ ] Population
-- [ ] Min
-  - [ ] Area
-  - [ ] Borders per Country
-  - [ ] Currencies per Country
-  - [ ] Gini
-  - [ ] Languages per Country
-  - [ ] Population
-- [ ] Sum
-  - [ ] Area
-  - [ ] Gini
-  - [ ] Population
+`aggregation` values:
+
+- average
+  - acceptable `field` values are:
+    - area
+    - borders
+    - currencies
+    - gini
+    - languages
+    - latitude
+    - longitude
+    - population
+- count
+  - acceptable `field` values are:
+    - borders
+    - countries
+    - currencies
+    - languages
+- max
+  - acceptable `field` values are:
+    - area
+    - gini
+    - population
+- min
+  - acceptable `field` values are:
+    - area
+    - borders
+    - currencies
+    - gini
+    - languages
+    - population
+- sum
+  - acceptable `field` values are:
+    - area
+    - gini
+    - population
 
 
 ## Examples
 
 ### Max area by region
 
-`GET /aggregated-data/?aggregation=max&field=area&by=region`
+Console input:
+
+`$ get_country_data --aggregation=max --field=area --by=region`
+
+Console output:
 
 ```json
 {
@@ -69,7 +82,11 @@ aggregations, all of them by Region or Subregion:
 
 ### Average Languages per Country by subregion
 
-`GET /aggregated-data/?aggregation=avg&field=languages&by=subregion`
+Console input:
+
+`$ get_country_data --aggregation=avg --field=languages --by=subregion`
+
+Console output:
 
 ```json
 {
@@ -97,12 +114,15 @@ aggregations, all of them by Region or Subregion:
   "Western Europe": 1.67,
   "null": 2.0
 }
-
 ```
 
 ### Count currencies by region
 
-`GET /aggregated-data/?aggregation=count&field=currencies&by=region`
+Console input:
+
+`$ get_country_data --aggregation=count --field=currencies --by=region`
+
+Console output:
 
 ```json
 {
@@ -114,14 +134,14 @@ aggregations, all of them by Region or Subregion:
   "Polar": 2,
   "null": 2
 }
-
 ```
 
 
 ## Deliverables
 
 - [ ] A new git repo with your project's code.
-- [ ] A README file which details how to execute the API.
+- [ ] A README file which details how to set up, run and test the project.
+- [ ] `--help` output for your command line tool
 
 
 ## Considerations
