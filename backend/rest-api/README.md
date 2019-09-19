@@ -139,7 +139,7 @@ Console output:
 
 ## Deliverables
 
-- [ ] A new git repo with your project's code.
+- [ ] A zip file with your project's code.
 - [ ] A README file which details how to set up, run and test the project.
 - [ ] `--help` output for your command line tool
 
